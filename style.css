@@ -1,0 +1,128 @@
+ @font-face {
+      font-family: "Shabnam";
+      src: url("https://cdn.fontcdn.ir/Fonts/Shabnam/a074a415cfe0e4f57e2ede996a73d0e509c0ea194c9678c7b87c65fb977907e7.woff2") format("woff2");
+      font-weight: 100;
+      font-style: normal;
+ }
+
+ @font-face {
+      font-family: "Shabnam";
+      src: url("https://cdn.fontcdn.ir/Fonts/Shabnam/87cf5dde711a284c1e25dd414d51a571b7c9aedd91b2b96f9d679869f5d65162.woff2") format("woff2");
+      font-weight: 300;
+      font-style: normal;
+ }
+
+ @font-face {
+      font-family: "Shabnam";
+      src: url("https://cdn.fontcdn.ir/Fonts/Shabnam/540d3f4e172bd6b5c70dd06bce57e055ce59270e95ea642b414fe0709faaa085.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+ }
+
+ @font-face {
+      font-family: "Shabnam";
+      src: url("https://cdn.fontcdn.ir/Fonts/Shabnam/fd5931f57e84baad81cc7243cfc1c83e5ac7f5dd17818d917765063544a54441.woff2") format("woff2");
+      font-weight: 500;
+      font-style: normal;
+ }
+
+ @font-face {
+      font-family: "Shabnam";
+      src: url("https://cdn.fontcdn.ir/Fonts/Shabnam/1ff187f5320ec4527ebb6a71831b88289a6cb18ca33ac34476b96960f0af7282.woff2") format("woff2");
+      font-weight: 700;
+      font-style: normal;
+ }
+
+ * {
+      margin: 0;
+      padding: 0;
+ }
+
+ :root {
+      --orange: rgb(187, 131, 0);
+      --default: rgb(36, 36, 36);
+      --gray: rgb(147, 147, 147);
+
+ }
+
+ body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 8s ease infinite;
+      font-family: shabnam;
+ }
+
+ @keyframes gradient {
+      0% {
+           background-position: 0% 50%;
+      }
+
+      50% {
+           background-position: 100% 50%;
+      }
+
+      100% {
+           background-position: 0% 50%;
+      }
+ }
+
+ .calc {
+      height: 540px;
+      width: 350px;
+      background-color: rgb(19, 19, 19);
+      color: #fff;
+      padding: 15px;
+      border-radius: 15px;
+ }
+
+
+ .screen {
+      padding-top: 1rem;
+      margin-bottom: 1rem;
+      text-align: right;
+      font-size: 48px;
+      font-weight: 200;
+      overflow: hidden;
+ }
+
+ .btns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+ }
+
+ button {
+      flex: 0 0 25%;
+      max-width: calc(25% - 17px);
+      margin-inline: 5px;
+      margin-bottom: 10px;
+      height: 70px;
+      border-radius: 50px;
+      border: unset;
+      font-size: 24px;
+      font-weight: 200;
+      background-color: var(--default);
+      color: #fff;
+      cursor: pointer;
+ }
+
+ .color1 {
+      background-color: var(--orange);
+ }
+
+ .color2 {
+      background-color: var(--gray);
+      color: white;
+ }
+
+
+ .zero {
+      flex: 0 0 50%;
+      max-width: calc(50% - 20px);
+      text-align: left;
+      padding: 0px 0px 0px 25px;
+ }
